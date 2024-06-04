@@ -1,10 +1,16 @@
 import React from 'react'
-
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Navbar from './component/Navbar'
 const App = () => {
   return (
-    <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Navbar />
+          <Route />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
